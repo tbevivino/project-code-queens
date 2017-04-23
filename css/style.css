@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+
+/* banner styles ====================================== */
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: relative; /*allows absolute positioning of banner h1 on the banner*/
+    background: url(../images/banner_bridge_edited.jpg); /*code for background image*/
+    background-size: cover; /*causes image to resize with browser size*/
+}
+    
+.banner h1 {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    margin:0px;
+    left: 350px;
+}
+
+.banner h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner h1 a:hover {
+    color: #DAE3EA;
+    text-decoration: underline;
+}
+
+/* nav styles=================================== */
+
+.main-nav ul {
+    list-style: none; /*removes bullet points*/
+    overflow: auto; /*this allows height to be set to these floated elements*/
+    background: #3A4855;
+    padding: 5px 0px;
+    /*margin: 5px 0px; I prefer this without the margin*/
+    
+}
+
+.main-nav ul li {
+    width: 33%;
+    float: left;
+    text-align: center;
+    
+}
+
+.main-nav ul li a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    color: #DAE3EA;
+    text-decoration: underline;
+}
+
+main {
+    background-color: #DBCFBF;
+    width: 100%;
+    /*won't typically need to assign a height because content will define height*/
+    float: left;
+}
+
+
+footer {
+    background-color: #3A4855;
+    width: 100%;
+    clear: both;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h1 {
+    color: #3A4855;
+    text-decoration: bold;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    text-indent: 15px;
+}
+p1 {
+    color: #3A4855;
+}
+
+.img-container {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.img-container img {
+     border: 2px solid #3A4855;
+}
+
+h1.text-container {
+    margin-bottom: 0px;
+}
+.text-container {
+    color: #3A4855;
+}
+
+.text-container p{
+    color: #3A4855;
+}
+
+.img-with-text {
+    width: 70%;
+    margin: auto;
+}
+
+.img-with-text .img-container {
+    float:left;
+    width: 300px;
+    display: block;
+}
+
+
+.img-with-text .img-container img {
+    width: 100%;
+    height: 200px;
+}
+
+.img-with-text .text-container{
+    float: left;
+    width: calc(100% - 350px);
+}
+
+
+
+/* Utility classes*/
+
+.clearfix::after {
+    content: "";
+      display: table;
+      clear: both;
+}
+
+/* this was added to add space between h1 and paragraphs */
+.mt-sm {
+    margin-top: 10px;
+}
+
+/* this was added to add border around pics that do not have links*/
+.border-sm {
+    border: 2px solid #3A4855;
+}
+    
